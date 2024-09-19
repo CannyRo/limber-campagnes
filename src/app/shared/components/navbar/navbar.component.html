@@ -1,1 +1,63 @@
-<p>navbar works!</p>
+<div class="vh-100 w-240px">
+    <div class="d-flex justify-content-center pt-3 px-auto mb-72px">
+        <img src="../../../../assets/logo.svg" alt="Logo of Limber company" class="img-fluid">
+    </div>
+    <ul class="nav flex-column gap-3 ps-10px pe-60px">
+        <li class="nav-item ">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/accueil" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}" active>
+                <fa-icon [icon]="faHouse" class="me-3"></fa-icon>
+                Accueil
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/mur" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}" active>
+                <fa-icon [icon]="faBorderAll" class="me-3"></fa-icon>
+                Mur
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/contenus" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}" active>
+                <fa-icon [icon]="faPaperclip" class="me-3"></fa-icon>
+                Contenus
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/campagnes" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}">
+                <fa-icon [icon]="faBookmark" class="me-3"></fa-icon>
+                Campagnes
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/calendrier" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}" active>
+                <fa-icon [icon]="faCalendarDays" class="me-3"></fa-icon>
+                Calendrier
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/scenarios" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}" active>
+                <fa-icon [icon]="faNewspaper" class="me-3"></fa-icon>
+                Scénarios
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/conversion" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}" active>
+                <fa-icon [icon]="faMagnet" class="me-3"></fa-icon>
+                Conversion
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rounded-pill nav-btn" RouterLink="/analytics" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}" active>
+                <fa-icon [icon]="faChartSimple" class="me-3"></fa-icon>
+                Analytics
+            </a>
+        </li>
+    </ul>
+</div>
