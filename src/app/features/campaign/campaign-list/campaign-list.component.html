@@ -47,31 +47,21 @@
                 </tr>
                 }
             </tbody>
-            <tfoot>
-                <div class="d-flex w-100 justify-content-between">
+            <tfoot class="w-100">
+                <div class="w-100 d-flex">
                     <select (change)="onOptionChange($event)"
-                        class="form-select form-select fs-6 py-2 m-3 w-50 text-secondary"
+                        class="form-select form-select fs-6 py-2 m-3 me-auto w-50 text-secondary"
                         aria-label="Choisi le nombre de campagne par page">
                         @for( option of options ; track option.indexOf){
                         <option [value]="option">{{ option }} résultats par page</option>
                         }
                     </select>
                     @if( rawCampaign() ){
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&#x2039;</span>
-                                </a>
-                            </li>
-                            <div class="page-item">{{ rawCampaign.next - 1 }} / {{ rawCampaign.last }}</div>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&#x203A;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" (click)="previousPage($event)">&#x2039;</button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm disable">{{rawCampaign().prev ? rawCampaign().prev + rawCampaign().first : 1 }} / {{ rawCampaign().last }}</button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" (click)="nextPage($event)">&#x203A;</button>
+                        </div>
                     }
                 </div>
             </tfoot>

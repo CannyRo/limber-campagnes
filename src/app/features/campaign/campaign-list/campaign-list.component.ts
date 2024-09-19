@@ -61,4 +61,20 @@ export class CampaignListComponent {
     this.foo().itemsByPage = Number(selectedValue);
   }
 
+  previousPage(event :Event) {
+    if(this.rawCampaign().prev > 1){
+      const newValue = this.rawCampaign().next - 2;
+      this.targetedPage.set(newValue.toString());
+      this.foo().pageNumber = newValue;
+    }
+  }
+  nextPage(event :Event) {
+    if(this.rawCampaign().next <= this.rawCampaign().last){
+      const newValue = this.rawCampaign().next;
+      this.targetedPage.set(newValue.toString());
+      this.foo().pageNumber = newValue;
+    }
+  }
+
+
 }
