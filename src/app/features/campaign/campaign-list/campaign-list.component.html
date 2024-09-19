@@ -1,9 +1,5 @@
 <div class="w-100 px-50px">
-    @if( rawCampaign() ){
-    <pre>{{rawCampaign() | json }}</pre>
-    @for( truc of rawCampaign().data ; track truc.id){
-    <p>{{truc.title}}</p>
-    } }
+    
     <div class="rounded-3 overflow-hidden">
         <table class="table bg-white p-4">
             <thead>
