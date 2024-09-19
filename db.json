@@ -1,0 +1,592 @@
+{
+  "campagnes": [
+    {
+      "id": 1,
+      "title": "Lancement du Nouveau Produit",
+      "description": {
+        "goals": "Présenter le nouveau produit au public.",
+        "targets": ["Clients existants", "Nouveaux clients", "Presse"],
+        "keyMessages": [
+          "Nouvelle technologie",
+          "Innovation",
+          "Haute performance"
+        ],
+        "keywords": ["nouveau produit", "innovation", "technologie"],
+        "dateStart": "2024-05-01",
+        "dateStop": "2024-05-15"
+      },
+      "mainKeywords": ["nouveau produit", "technologie"],
+      "secondaryKeywords": ["innovation", "performance"],
+      "dateStart": "2024-05-01",
+      "dateStop": "2024-05-15",
+      "campaignParents": null,
+      "currentShare": 30,
+      "futurShare": 20,
+      "targetsNum": 5,
+      "contacts": 100,
+      "createBy": {
+        "firstname": "Jean",
+        "lastname": "Dupont"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Semaine de la Santé et du Bien-être",
+      "description": {
+        "goals": "Encourager les employés à adopter un mode de vie sain.",
+        "targets": ["Employés", "Communauté locale", "Associations de santé"],
+        "keyMessages": [
+          "Manger sainement",
+          "Faire de l'exercice",
+          "Prendre soin de soi"
+        ],
+        "keywords": ["santé", "bien-être", "forme physique"],
+        "dateStart": "2024-03-01",
+        "dateStop": "2024-03-07"
+      },
+      "mainKeywords": ["santé", "bien-être"],
+      "secondaryKeywords": ["forme physique", "mode de vie"],
+      "dateStart": "2024-03-01",
+      "dateStop": "2024-03-07",
+      "campaignParents": null,
+      "currentShare": 20,
+      "futurShare": 15,
+      "targetsNum": 4,
+      "contacts": 80,
+      "createBy": {
+        "firstname": "Marie",
+        "lastname": "Leblanc"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Journée de l'Environnement",
+      "description": {
+        "goals": "Sensibiliser sur la protection de l'environnement.",
+        "targets": ["Communauté", "Écoles", "Associations écologiques"],
+        "keyMessages": [
+          "Protégeons la planète",
+          "Réduisons les déchets",
+          "Plantons des arbres"
+        ],
+        "keywords": ["environnement", "écologie", "protection"],
+        "dateStart": "2024-06-05",
+        "dateStop": "2024-06-05"
+      },
+      "mainKeywords": ["environnement", "écologie"],
+      "secondaryKeywords": ["déchets", "sauvegarde"],
+      "dateStart": "2024-06-05",
+      "dateStop": "2024-06-05",
+      "campaignParents": null,
+      "currentShare": 50,
+      "futurShare": 30,
+      "targetsNum": 6,
+      "contacts": 150,
+      "createBy": {
+        "firstname": "Luc",
+        "lastname": "Martin"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Recrutement des Talents 2024",
+      "description": {
+        "goals": "Attirer de nouveaux talents pour renforcer l'équipe.",
+        "targets": [
+          "Jeunes diplômés",
+          "Professionnels expérimentés",
+          "Universités"
+        ],
+        "keyMessages": [
+          "Rejoignez notre équipe",
+          "Opportunités de carrière",
+          "Innovation"
+        ],
+        "keywords": ["recrutement", "carrière", "opportunité"],
+        "dateStart": "2024-09-01",
+        "dateStop": "2024-09-30"
+      },
+      "mainKeywords": ["recrutement", "carrière"],
+      "secondaryKeywords": ["opportunité", "équipe"],
+      "dateStart": "2024-09-01",
+      "dateStop": "2024-09-30",
+      "campaignParents": null,
+      "currentShare": 40,
+      "futurShare": 20,
+      "targetsNum": 5,
+      "contacts": 120,
+      "createBy": {
+        "firstname": "Sophie",
+        "lastname": "Bernard"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Lancement du Site Web",
+      "description": {
+        "goals": "Annoncer le lancement du nouveau site web.",
+        "targets": ["Clients", "Presse", "Partenaires"],
+        "keyMessages": [
+          "Découvrez notre nouveau site",
+          "Expérience utilisateur améliorée",
+          "Services en ligne"
+        ],
+        "keywords": ["site web", "lancement", "numérique"],
+        "dateStart": "2024-04-01",
+        "dateStop": "2024-04-10"
+      },
+      "mainKeywords": ["site web", "lancement"],
+      "secondaryKeywords": ["numérique", "expérience"],
+      "dateStart": "2024-04-01",
+      "dateStop": "2024-04-10",
+      "campaignParents": null,
+      "currentShare": 25,
+      "futurShare": 10,
+      "targetsNum": 4,
+      "contacts": 90,
+      "createBy": {
+        "firstname": "Thomas",
+        "lastname": "Durand"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Webinaire sur la Cybersécurité",
+      "description": {
+        "goals": "Former les employés sur les bonnes pratiques en cybersécurité.",
+        "targets": ["Employés", "Développeurs", "Responsables IT"],
+        "keyMessages": [
+          "Sécurité en ligne",
+          "Protection des données",
+          "Meilleures pratiques"
+        ],
+        "keywords": ["cybersécurité", "formation", "sécurité"],
+        "dateStart": "2024-07-15",
+        "dateStop": "2024-07-15"
+      },
+      "mainKeywords": ["cybersécurité", "formation"],
+      "secondaryKeywords": ["sécurité", "protection"],
+      "dateStart": "2024-07-15",
+      "dateStop": "2024-07-15",
+      "campaignParents": null,
+      "currentShare": 35,
+      "futurShare": 20,
+      "targetsNum": 5,
+      "contacts": 110,
+      "createBy": {
+        "firstname": "Claire",
+        "lastname": "Fournier"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Promotion de l'Édition Spéciale",
+      "description": {
+        "goals": "Promouvoir une édition spéciale de produit.",
+        "targets": ["Clients fidèles", "Influenceurs", "Médias"],
+        "keyMessages": [
+          "Édition limitée",
+          "Caractéristiques uniques",
+          "Offre spéciale"
+        ],
+        "keywords": ["édition spéciale", "promotion", "produit"],
+        "dateStart": "2024-08-01",
+        "dateStop": "2024-08-15"
+      },
+      "mainKeywords": ["édition spéciale", "promotion"],
+      "secondaryKeywords": ["offre", "produit"],
+      "dateStart": "2024-08-01",
+      "dateStop": "2024-08-15",
+      "campaignParents": null,
+      "currentShare": 50,
+      "futurShare": 25,
+      "targetsNum": 6,
+      "contacts": 130,
+      "createBy": {
+        "firstname": "Alice",
+        "lastname": "Lemoine"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Journée Portes Ouvertes",
+      "description": {
+        "goals": "Inviter le public à découvrir nos installations.",
+        "targets": ["Public local", "Familles", "Partenaires"],
+        "keyMessages": [
+          "Découvrez nos locaux",
+          "Rencontrez notre équipe",
+          "Activités pour tous"
+        ],
+        "keywords": ["portes ouvertes", "visite", "découverte"],
+        "dateStart": "2024-11-15",
+        "dateStop": "2024-11-15"
+      },
+      "mainKeywords": ["portes ouvertes", "découverte"],
+      "secondaryKeywords": ["visite", "activités"],
+      "dateStart": "2024-11-15",
+      "dateStop": "2024-11-15",
+      "campaignParents": null,
+      "currentShare": 20,
+      "futurShare": 10,
+      "targetsNum": 7,
+      "contacts": 140,
+      "createBy": {
+        "firstname": "François",
+        "lastname": "Giraud"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Campagne de RSE 2024",
+      "description": {
+        "goals": "Mettre en avant nos initiatives en responsabilité sociétale.",
+        "targets": ["Clients", "Communauté", "ONG"],
+        "keyMessages": [
+          "Engagement social",
+          "Projets durables",
+          "Impact positif"
+        ],
+        "keywords": ["RSE", "responsabilité", "engagement"],
+        "dateStart": "2024-10-01",
+        "dateStop": "2024-10-31"
+      },
+      "mainKeywords": ["RSE", "responsabilité"],
+      "secondaryKeywords": ["engagement", "durabilité"],
+      "dateStart": "2024-10-01",
+      "dateStop": "2024-10-31",
+      "campaignParents": null,
+      "currentShare": 40,
+      "futurShare": 25,
+      "targetsNum": 8,
+      "contacts": 200,
+      "createBy": {
+        "firstname": "Élise",
+        "lastname": "Leclerc"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Atelier de Développement Personnel",
+      "description": {
+        "goals": "Organiser des ateliers pour le développement personnel des employés.",
+        "targets": ["Employés", "Managers", "Partenaires de formation"],
+        "keyMessages": [
+          "Développez vos compétences",
+          "Formation continue",
+          "Croissance personnelle"
+        ],
+        "keywords": ["développement personnel", "formation", "compétences"],
+        "dateStart": "2024-02-01",
+        "dateStop": "2024-02-28"
+      },
+      "mainKeywords": ["développement personnel", "formation"],
+      "secondaryKeywords": ["compétences", "croissance"],
+      "dateStart": "2024-02-01",
+      "dateStop": "2024-02-28",
+      "campaignParents": null,
+      "currentShare": 15,
+      "futurShare": 10,
+      "targetsNum": 5,
+      "contacts": 70,
+      "createBy": {
+        "firstname": "Julien",
+        "lastname": "Moreau"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Soutien aux Startups Locales",
+      "description": {
+        "goals": "Soutenir les startups locales en leur offrant des ressources.",
+        "targets": ["Startups locales", "Investisseurs", "Incubateurs"],
+        "keyMessages": [
+          "Soutien aux startups",
+          "Ressources et mentorat",
+          "Croissance locale"
+        ],
+        "keywords": ["startups", "soutien", "croissance"],
+        "dateStart": "2024-12-01",
+        "dateStop": "2024-12-15"
+      },
+      "mainKeywords": ["startups", "soutien"],
+      "secondaryKeywords": ["ressources", "croissance"],
+      "dateStart": "2024-12-01",
+      "dateStop": "2024-12-15",
+      "campaignParents": null,
+      "currentShare": 30,
+      "futurShare": 15,
+      "targetsNum": 4,
+      "contacts": 60,
+      "createBy": {
+        "firstname": "Nicolas",
+        "lastname": "Roux"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Campagne de Fidélisation Clientèle",
+      "description": {
+        "goals": "Renforcer la fidélité des clients existants.",
+        "targets": ["Clients fidèles", "Clients potentiels", "Partenaires"],
+        "keyMessages": [
+          "Merci pour votre fidélité",
+          "Avantages exclusifs",
+          "Programme de fidélité"
+        ],
+        "keywords": ["fidélisation", "clients", "avantages"],
+        "dateStart": "2024-01-01",
+        "dateStop": "2024-01-31"
+      },
+      "mainKeywords": ["fidélisation", "clients"],
+      "secondaryKeywords": ["avantages", "programme"],
+      "dateStart": "2024-01-01",
+      "dateStop": "2024-01-31",
+      "campaignParents": null,
+      "currentShare": 45,
+      "futurShare": 30,
+      "targetsNum": 6,
+      "contacts": 150,
+      "createBy": {
+        "firstname": "Lucie",
+        "lastname": "David"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Conférence sur l'Innovation Technologique",
+      "description": {
+        "goals": "Présenter les dernières innovations en technologie.",
+        "targets": [
+          "Professionnels de la tech",
+          "Entrepreneurs",
+          "Médias spécialisés"
+        ],
+        "keyMessages": [
+          "Dernières tendances",
+          "Innovations disruptives",
+          "Technologies émergentes"
+        ],
+        "keywords": ["innovation", "technologie", "tendances"],
+        "dateStart": "2024-08-01",
+        "dateStop": "2024-08-02"
+      },
+      "mainKeywords": ["innovation", "technologie"],
+      "secondaryKeywords": ["tendances", "disruptives"],
+      "dateStart": "2024-08-01",
+      "dateStop": "2024-08-02",
+      "campaignParents": null,
+      "currentShare": 60,
+      "futurShare": 25,
+      "targetsNum": 7,
+      "contacts": 180,
+      "createBy": {
+        "firstname": "Paul",
+        "lastname": "Dupuis"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Événement de Lancement de la Nouvelle Application",
+      "description": {
+        "goals": "Lancer la nouvelle application mobile de l'entreprise.",
+        "targets": ["Utilisateurs potentiels", "Blogueurs tech", "Médias"],
+        "keyMessages": [
+          "Téléchargez maintenant",
+          "Fonctionnalités innovantes",
+          "Expérience utilisateur"
+        ],
+        "keywords": ["application", "lancement", "mobile"],
+        "dateStart": "2024-09-15",
+        "dateStop": "2024-09-30"
+      },
+      "mainKeywords": ["application", "lancement"],
+      "secondaryKeywords": ["mobile", "fonctionnalités"],
+      "dateStart": "2024-09-15",
+      "dateStop": "2024-09-30",
+      "campaignParents": null,
+      "currentShare": 40,
+      "futurShare": 20,
+      "targetsNum": 5,
+      "contacts": 100,
+      "createBy": {
+        "firstname": "Sébastien",
+        "lastname": "Morel"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Campagne de Noël 2024",
+      "description": {
+        "goals": "Promouvoir les offres et événements de Noël.",
+        "targets": ["Clients", "Public général", "Partenaires"],
+        "keyMessages": [
+          "Offres spéciales de Noël",
+          "Événements festifs",
+          "Cadeaux et promotions"
+        ],
+        "keywords": ["Noël", "promotions", "offres"],
+        "dateStart": "2024-12-01",
+        "dateStop": "2024-12-25"
+      },
+      "mainKeywords": ["Noël", "promotions"],
+      "secondaryKeywords": ["offres", "festif"],
+      "dateStart": "2024-12-01",
+      "dateStop": "2024-12-25",
+      "campaignParents": null,
+      "currentShare": 55,
+      "futurShare": 35,
+      "targetsNum": 8,
+      "contacts": 200,
+      "createBy": {
+        "firstname": "Anaïs",
+        "lastname": "Poirier"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Campagne de Sensibilisation à la Sécurité au Travail",
+      "description": {
+        "goals": "Augmenter la sensibilisation à la sécurité sur le lieu de travail.",
+        "targets": ["Employés", "Managers", "Responsables sécurité"],
+        "keyMessages": [
+          "Sécurité avant tout",
+          "Prévention des risques",
+          "Respect des normes"
+        ],
+        "keywords": ["sécurité", "prévention", "risques"],
+        "dateStart": "2024-05-01",
+        "dateStop": "2024-05-31"
+      },
+      "mainKeywords": ["sécurité", "prévention"],
+      "secondaryKeywords": ["risques", "normes"],
+      "dateStart": "2024-05-01",
+      "dateStop": "2024-05-31",
+      "campaignParents": null,
+      "currentShare": 30,
+      "futurShare": 15,
+      "targetsNum": 6,
+      "contacts": 90,
+      "createBy": {
+        "firstname": "Olivier",
+        "lastname": "Blanc"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Semaine des Technologies Vertes",
+      "description": {
+        "goals": "Mettre en avant les technologies écologiques.",
+        "targets": ["Professionnels", "Public", "Innovateurs"],
+        "keyMessages": [
+          "Technologies écologiques",
+          "Innovation durable",
+          "Réduction de l'empreinte carbone"
+        ],
+        "keywords": ["technologies vertes", "écologie", "durabilité"],
+        "dateStart": "2024-06-10",
+        "dateStop": "2024-06-17"
+      },
+      "mainKeywords": ["technologies vertes", "écologie"],
+      "secondaryKeywords": ["durabilité", "carbone"],
+      "dateStart": "2024-06-10",
+      "dateStop": "2024-06-17",
+      "campaignParents": null,
+      "currentShare": 45,
+      "futurShare": 25,
+      "targetsNum": 7,
+      "contacts": 160,
+      "createBy": {
+        "firstname": "Mathieu",
+        "lastname": "Chauvin"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Campagne de Relance des Abonnés",
+      "description": {
+        "goals": "Réengager les abonnés inactifs.",
+        "targets": ["Abonnés inactifs", "Anciennement abonnés"],
+        "keyMessages": [
+          "Nous vous avons manqué",
+          "Offre spéciale pour vous",
+          "Retournez chez nous"
+        ],
+        "keywords": ["relance", "abonnés", "réengagement"],
+        "dateStart": "2024-07-01",
+        "dateStop": "2024-07-31"
+      },
+      "mainKeywords": ["relance", "abonnés"],
+      "secondaryKeywords": ["réengagement", "offre"],
+      "dateStart": "2024-07-01",
+      "dateStop": "2024-07-31",
+      "campaignParents": null,
+      "currentShare": 35,
+      "futurShare": 20,
+      "targetsNum": 5,
+      "contacts": 120,
+      "createBy": {
+        "firstname": "Hélène",
+        "lastname": "Gosselin"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Campagne de Réduction des Déchets",
+      "description": {
+        "goals": "Encourager la réduction des déchets au bureau.",
+        "targets": ["Employés", "Gestionnaires", "Équipe environnement"],
+        "keyMessages": [
+          "Réduisons les déchets",
+          "Pratiques durables",
+          "Zéro déchet"
+        ],
+        "keywords": ["réduction des déchets", "durabilité", "bureau"],
+        "dateStart": "2024-04-01",
+        "dateStop": "2024-04-30"
+      },
+      "mainKeywords": ["réduction des déchets", "durabilité"],
+      "secondaryKeywords": ["pratiques", "zéro déchet"],
+      "dateStart": "2024-04-01",
+      "dateStop": "2024-04-30",
+      "campaignParents": null,
+      "currentShare": 25,
+      "futurShare": 10,
+      "targetsNum": 4,
+      "contacts": 80,
+      "createBy": {
+        "firstname": "Julien",
+        "lastname": "Blanchard"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Festival de Musique d'Entreprise",
+      "description": {
+        "goals": "Organiser un festival de musique pour les employés et leurs familles.",
+        "targets": ["Employés", "Familles", "Partenaires"],
+        "keyMessages": [
+          "Musique en direct",
+          "Événement convivial",
+          "Moment de détente"
+        ],
+        "keywords": ["musique", "festival", "détente"],
+        "dateStart": "2024-11-01",
+        "dateStop": "2024-11-03"
+      },
+      "mainKeywords": ["musique", "festival"],
+      "secondaryKeywords": ["détente", "convivial"],
+      "dateStart": "2024-11-01",
+      "dateStop": "2024-11-03",
+      "campaignParents": null,
+      "currentShare": 60,
+      "futurShare": 30,
+      "targetsNum": 8,
+      "contacts": 220,
+      "createBy": {
+        "firstname": "Aurore",
+        "lastname": "Hébert"
+      }
+    }
+  ]
+}

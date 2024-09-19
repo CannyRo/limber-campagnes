@@ -1,11 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body{
+    font-family: 'Prompt', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .bg-orange-light{
     background-color: #F9F5F1;
 }
 .w-240px{
     width: 240px;
+}
+.h-120px{
+    height: 120px;
 }
 .mb-72px{
     margin-bottom: 72px;
@@ -16,6 +23,10 @@
 .ps-10px{
     padding-left: 10px;
 }
+.px-50px{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .nav-btn{
     display: flex;
     justify-content: left;
@@ -25,6 +36,11 @@
     color: #91919C;
 }
 .nav-btn:active{
+    color: #2A7A93;
+    background-color: #EEF4F6;
+}
+
+.nav-link.active {
     color: #2A7A93;
     background-color: #EEF4F6;
 }
