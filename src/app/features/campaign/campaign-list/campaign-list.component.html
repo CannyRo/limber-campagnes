@@ -1,42 +1,83 @@
 <div class="w-100 px-50px">
-    <table class="table bg-white p-4 rounded">
-        <thead>
-            <tr >
-                <th scope="col-3" class="text-secondary-emphasis">Nom</th>
-                <th scope="col" ></th>
-                <th scope="col" class="text-center text-secondary-emphasis">Partages</th>
-                <th scope="col" class="text-center text-secondary-emphasis">Clics</th>
-                <th scope="col" class="text-center text-secondary-emphasis">Contacts</th>
-                <th scope="col" class="text-center text-secondary-emphasis"></th>
-            </tr>
-        </thead>
-        
-        <tbody>
-            @for(campaign of campaignList(); track campaign.id){
-            <tr>
-                <td class="py-4"><p class="fw-semibold text-secondary-emphasis mb-0">{{campaign.title}}</p>
-                    @for(keyword of campaign.mainKeywords; track keyword.indexOf){
-                        <button type="button" class="btn btn-crimson btn-sm text-white me-2 rounded-3">{{keyword}}</button>
+    @if( rawCampaign() ){
+    <pre>{{rawCampaign() | json }}</pre>
+    @for( truc of rawCampaign().data ; track truc.id){
+    <p>{{truc.title}}</p>
+    } }
+    <div class="rounded-3 overflow-hidden">
+        <table class="table bg-white p-4">
+            <thead>
+                <tr>
+                    <th scope="col-3" class="text-secondary-emphasis ps-3">Nom</th>
+                    <th scope="col"></th>
+                    <th scope="col" class="text-center text-secondary-emphasis">Partages</th>
+                    <th scope="col" class="text-center text-secondary-emphasis">Clics</th>
+                    <th scope="col" class="text-center text-secondary-emphasis">Contacts</th>
+                    <th scope="col" class="text-center text-secondary-emphasis"></th>
+                </tr>
+            </thead>
+            @if( rawCampaign() ){
+            <tbody>
+                @for(campaign of rawCampaign().data ; track campaign.id){
+                <tr>
+                    <td class="py-4 ps-3">
+                        <p class="fw-semibold text-secondary-emphasis mb-0">{{campaign.title}}</p>
+                        @for(keyword of campaign.mainKeywords; track keyword.indexOf){
+                        <button type="button"
+                            class="btn btn-crimson btn-sm text-white me-2 rounded-3">{{keyword}}</button>
+                        }
+                    </td>
+                    <td><!--Avatar si existant--></td>
+                    <td class="text-center align-middle text-secondary-emphasis">{{campaign.currentShare }} <p
+                            class="small text-secondary">({{campaign.futurShare}} en attente)</p>
+                    </td>
+                    <td class="text-center align-middle text-secondary-emphasis">{{campaign.targetsNum }}</td>
+                    <td class="text-center align-middle text-secondary-emphasis">{{campaign.contacts}}</td>
+                    <td class="text-center align-middle">
+                        <button type="button" class="btn btn-grey-blue">
+                            <fa-icon [icon]="faShareNodes"></fa-icon>
+                        </button>
+                        <button type="button" class="btn btn-grey-blue mx-2">
+                            <fa-icon [icon]="faPencil"></fa-icon>
+                        </button>
+                        <button type="button" class="btn btn-grey-blue">
+                            <fa-icon [icon]="faGear"></fa-icon>
+                        </button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+            <tfoot>
+                <div class="d-flex w-100 justify-content-between">
+                    <select (change)="onOptionChange($event)"
+                        class="form-select form-select fs-6 py-2 m-3 w-50 text-secondary"
+                        aria-label="Choisi le nombre de campagne par page">
+                        @for( option of options ; track option.indexOf){
+                        <option [value]="option">{{ option }} résultats par page</option>
+                        }
+                    </select>
+                    @if( rawCampaign() ){
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&#x2039;</span>
+                                </a>
+                            </li>
+                            <div class="page-item">{{ rawCampaign.next - 1 }} / {{ rawCampaign.last }}</div>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&#x203A;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                     }
-                </td>
-                <td><!--Avatar si existant--></td>
-                <td class="text-center align-middle text-secondary-emphasis">{{campaign.currentShare }} <p class="small text-secondary">({{campaign.futurShare}} en attente)</p></td>
-                <td class="text-center align-middle text-secondary-emphasis">{{campaign.targetsNum }}</td>
-                <td class="text-center align-middle text-secondary-emphasis">{{campaign.contacts}}</td>
-                <td class="text-center align-middle">
-                    <button type="button" class="btn btn-grey-blue">
-                        <fa-icon [icon]="faShareNodes"></fa-icon>
-                    </button>
-                    <button type="button" class="btn btn-grey-blue mx-2">
-                        <fa-icon [icon]="faPencil"></fa-icon>
-                    </button>
-                    <button type="button" class="btn btn-grey-blue">
-                        <fa-icon [icon]="faGear"></fa-icon>
-                    </button>
-                </td>
-            </tr>
+                </div>
+            </tfoot>
             }
-        </tbody>
-    
-    </table>
+
+        </table>
+    </div>
+
 </div>

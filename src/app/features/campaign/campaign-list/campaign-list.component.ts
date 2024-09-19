@@ -1,13 +1,17 @@
 import { Component, computed, inject, signal } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { CampaignService } from '../../../shared/services/campaign.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGear, faPencil, faShareNodes } from '@fortawesome/free-solid-svg-icons';
+import { JsonPipe } from '@angular/common';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { PageItems } from '../../../shared/models/campaign.model';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-campaign-list',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, JsonPipe, ReactiveFormsModule,],
   templateUrl: './campaign-list.component.html',
   styleUrl: './campaign-list.component.scss'
 })
@@ -21,7 +25,16 @@ export class CampaignListComponent {
   
   readonly campaignService = inject(CampaignService);
   readonly campaignList = toSignal(this.campaignService.getCampaignList());
-  readonly rawCampaign = toSignal(this.campaignService.getCampaignListWithPage(Number(this.targetedPage()), Number(this.numberPerPage())), {
+
+  readonly foo = computed(() => ({
+    pageNumber: Number(this.targetedPage()),
+    itemsByPage: Number(this.numberPerPage()),
+  }));
+
+  readonly rawCampaign = toSignal(
+    toObservable(this.foo).pipe(
+    switchMap((foo) => this.campaignService.getCampaignListWithPage(foo))), 
+    {
     initialValue: {
       "first": 0,
       "prev": 0,
@@ -29,13 +42,23 @@ export class CampaignListComponent {
       "last": 0,
       "pages": 0,
       "items": 0,
-      "data": []
+      "data": [],
   },
   });
-  
+
   readonly currentCampaignList = computed(()=> {
-    return this.rawCampaign().data;
+    console.log(' rawCampaign => ',this.rawCampaign);
+    return this.rawCampaign;
   })
   readonly loading = computed(() => !this.rawCampaign());
+  
+  options = ["5", "10", "20"];
+
+  onOptionChange(event: Event) {
+    const selectedValue = (event.target as HTMLSelectElement).value;
+    console.log("Nombre de résultat par page demandé : ", selectedValue);
+    this.numberPerPage.set(selectedValue);
+    this.foo().itemsByPage = Number(selectedValue);
+  }
 
 }
