@@ -8,6 +8,9 @@ body{
 .bg-orange-light{
     background-color: #F9F5F1;
 }
+.w-193px{
+    width: 193px;
+}
 .w-240px{
     width: 240px;
 }
@@ -35,12 +38,24 @@ body{
     height: 43px;
     color: #91919C;
 }
-.nav-btn:active{
+.nav-btn:active, .nav-btn:focus, .nav-btn:hover, .nav-link.active{
     color: #2A7A93;
     background-color: #EEF4F6;
+    font-weight: 500;
 }
 
-.nav-link.active {
-    color: #2A7A93;
-    background-color: #EEF4F6;
+.btn-crimson{
+    background-color: hsl(5, 64%, 59%);
+}
+.btn-crimson:hover, .btn-crimson:focus, .btn-crimson:active{
+    background-color: hsl(5, 64%, 54%);
+}
+
+.btn-grey-blue{
+    background-color: hsl(194, 56%, 37%);
+    color: #fff;
+}
+.btn-grey-blue:hover, .btn-grey-blue:focus, .btn-grey-blue:active{
+    background-color: hsl(194, 56%, 30%);
+    color: #fff;
 }
