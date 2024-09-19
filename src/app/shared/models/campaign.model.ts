@@ -39,3 +39,8 @@ export interface Person {
   lastname: string;
   avatar: string | null;
 }
+
+export interface PageItems {
+  pageNumber: number;
+  itemsByPage: number;
+}
